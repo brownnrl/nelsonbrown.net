@@ -144,34 +144,44 @@ It is still nice to be able to do full conversions of IPython notebooks, but som
 - `Sample Notebook 1 </pages/notebook-test.html>`_
 - `Sample Notebook 2 </pages/notebook-test-2.html>`_
 
+
+
+fp_in_scala
+haskellbook
+notebook_haskell_sample_nb3format.ipynb
+notebook_haskell_sample_nb3format.ipynb-meta
+notebook_haskell_sample_nb4format.ipynb
+notebooktest2.ipynb
+notebooktest2.ipynb-meta
+
 We can use PelicanSage to convert these individual blocks into content, using the ipynb directive specifying the zero-indexed order of the cell we want.
 
 .. code:: ReST
 
-    .. ipynb:: /pages/notebooks/notebook.ipynb
+    .. ipynb:: /pages/notebooks/notebook_haskell_sample_nb3format.ipynb
         :cell-order: 2
 
 This results in the following output:
 
-.. ipynb:: /pages/notebooks/notebook.ipynb
+.. ipynb:: /pages/notebooks/notebook_haskell_sample_nb3format.ipynb
     :cell-order: 2
 
 Some notebooks have multiple results associated with them with different types.  However, essentially, they are the same result.  In this next example, we have a base64 encoded png svg image which was returned back from the IHaskell session as 'html' and 'display-data', and hence the two different styled results.
 
-.. ipynb:: /pages/notebooks/notebook.ipynb
+.. ipynb:: /pages/notebooks/notebook_haskell_sample_nb3format.ipynb
     :cell-order: 3
 
 However, we can include a result-order directive, which will choose only the result desired in the final output.  Other options, such as suppress-code also work.
 
 .. code:: ReST
 
-    .. ipynb:: /pages/notebooks/notebook.ipynb
+    .. ipynb:: /pages/notebooks/notebook_haskell_sample_nb3format.ipynb
         :cell-order: 3
         :result-order: 1
         :suppress-code:
 
 
-.. ipynb:: /pages/notebooks/notebook.ipynb
+.. ipynb:: /pages/notebooks/notebook_haskell_sample_nb3format.ipynb
     :cell-order: 3
     :result-order: 1
     :suppress-code:
