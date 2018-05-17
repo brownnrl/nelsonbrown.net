@@ -145,15 +145,6 @@ It is still nice to be able to do full conversions of IPython notebooks, but som
 - `Sample Notebook 2 </pages/notebook-test-2.html>`_
 
 
-
-fp_in_scala
-haskellbook
-notebook_haskell_sample_nb3format.ipynb
-notebook_haskell_sample_nb3format.ipynb-meta
-notebook_haskell_sample_nb4format.ipynb
-notebooktest2.ipynb
-notebooktest2.ipynb-meta
-
 We can use PelicanSage to convert these individual blocks into content, using the ipynb directive specifying the zero-indexed order of the cell we want.
 
 .. code:: ReST
