@@ -3,15 +3,43 @@ GeoSpark for Aviation Data
 
 Hi! Thanks for coming out.  You're great.  You really are.
 
+
+
+----
+
+Background
+==========
+
+
+.. image:: artcc-map.jpg
+
+----
+
+Background
+==========
+
+
+.. image:: Airspace_classes_United_States.png
+
+----
+
+Background
+==========
+
+
+.. image:: zbw_high.jpg
+
 ----
 
 Pre-req Setup
 =============
 
 
-* Intellij Editor
+* Some background with Spark and Docker
+* Intellij Editor, PyCharm
 * Git
 * Scala + SBT
+* Python (2.7 yuck)
 * Starting a local Spark node
 
 ----
